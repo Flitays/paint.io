@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Painting</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="icon.png" type="image/png"> 
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 class="title">Select your figure</h1>
+    <div id="its-x"> <p><- X -></p></div>
+    <div id="its-y"><p ><- Y -></p></div>
+    
+
+
+    
+<div class="padd">
+  <div class="wrapper">
+        <div class="input-date">
+          <input type="text" id="range" required>
+          <div class="underline"></div>
+            <label>figure</label>
+        </div>
+  </div>
+  </div>
+       
+    
+
+<h2  class="title">Select range</h2>
+
+<div class="padd"><div class="wrapper">
+      <div class="input-date">
+        <input type="number" id="rangeX"  required>
+        <div class="underline"></div>
+          <label>x or x1</label>
+      </div>
+</div>
+</div>
+
+
+<div class="padd">
+<div class="wrapper">
+      <div class="input-date">
+        <input type="number" id="rangeY" required>
+        <div class="underline"></div>
+          <label>y or y1</label>
+      </div>
+</div>
+</div>
+
+
+<div class="padd">
+<div class="wrapper">
+      <div class="input-date">
+        <input type="number" id="rangeR"  required>
+        <div class="underline"></div>
+          <label>radius or x2</label>
+      </div>
+</div>
+</div>
+
+<div class="padd hidden">
+  <div class="wrapper">
+        <div class="input-date">
+          <input type="number" id="rangeL"  required>
+          <div class="underline"></div>
+            <label>y2</label>
+        </div>
+  </div>
+  </div>
+<!-- <input class="inputs" type="text" name="circleX"></input>
+<input class="inputs" type="text" name = "circleY"></input>
+<input class="inputs" type="text" name="circleR"></input> -->
+
+
+<div class="button_cont">
+  <button class="buttons" onclick="CreateImage()">paint</button>
+  <button class="buttons" onclick="ClearPlace()">clear</button>
+</div>
+
+
+<div class="paint-place">
+    <canvas id ="canvs"></canvas>
+</div>
+   
+
+
+  <script src="script.js"></script>
+  </body>
+  </html>
+  
